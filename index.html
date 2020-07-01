@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Eldas</title>
+  <base href="http://ahmednour005.github.io/eldas/">  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+</head>
+<body>
+  <app-root></app-root>
+  <div class="loader">
+    <img src="https://thumbs.gfycat.com/PotableEmbarrassedFrenchbulldog-small.gif" class="img-fluid">
+</div>
+  <div class="topbtn"> <i class="fa fa-arrow-up"></i> </div>
+  <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+  <script>
+        $(window).scroll(function(){
+        if($(this).scrollTop() > 600){
+           $('.topbtn').fadeIn(); 
+        }else{
+            $('.topbtn').fadeOut(); 
+        } 
+    });
+    
+    $('.topbtn').click(function(){
+        $('html , body').animate({scrollTop:0},800);
+    });
+    
+    $(window).on('load', function () {
+    $('.loader').fadeOut(1000);     
+    });
+
+  </script>
+  
+<script src="runtime.js" defer></script><script src="polyfills.js" defer></script><script src="styles.js" defer></script><script src="scripts.js" defer></script><script src="vendor.js" defer></script><script src="main.js" defer></script></body>
+</html>
