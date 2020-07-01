@@ -1,0 +1,156 @@
+.portfolio {
+overflow: hidden;
+padding: 0;
+margin: 0;
+}
+.portfolio .container{
+    padding: 0 103px;
+}
+.portfolio span{
+    display: block;
+    margin-top: 75px;
+    color: #a2adb4;
+    font-size: 14px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    text-align: center;
+}
+.portfolio h1{
+    text-align: center;
+    font-size: 48px;
+    font-weight: 800;
+    margin-bottom: 55px;
+}
+.portfolio img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.portfolio .basic-img{
+    width: 100%;
+    height: 290px;
+    background-color: #DDD;
+    margin-bottom: 10px;
+    position: relative;
+}
+.portfolio .height-img{
+    height: 590px;
+    width: 100%;
+    background: #DDD;
+    position: relative;
+    margin-bottom: 10px;
+}
+
+.portfolio .images{
+    padding:0 6px;
+   
+}
+.portfolio ul {
+    list-style: none;
+    margin-bottom: 30px;
+    padding: 0;
+}
+.portfolio ul li{
+    display: inline-block;
+    cursor: pointer;
+    margin-left: 15px;
+    font-weight: 600;
+}
+
+
+.portfolio ul li.active {
+    color:#1f7ee8;
+    position: relative;
+}
+.portfolio ul li.active::before{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 2px;
+    width: 100%;
+    background-color: #1f7ee8;
+}
+.portfolio .overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    color: #FFF;
+    background: #fe531da1;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: 0.5s;
+}
+
+.portfolio .overlay h4{
+    text-align: center;
+    margin-top: 85px;
+    font-weight: 500;
+}
+.portfolio .overlay hr{
+    width: 35%;
+    background: #FFF;
+    height: 2px;
+    margin-top: 20px;
+}
+.portfolio .overlay span{
+    margin-top: 0;
+    color: #ffffffbf;
+}
+.portfolio .pics{
+    transition: 0.5s;
+    cursor: pointer;
+}
+.portfolio .pics:hover > .overlay{
+    opacity: 1;
+}
+.portfolio .height-img .overlay h4{
+    margin-top: 80%;
+}
+
+.portfolio button{
+    background: #b5c4c9;
+    border: 1px solid #b5c4c9;
+    padding: 13px 25px 15px;
+    color: #FFF;
+    font-weight: 600;
+    font-size: 13px;
+    border-radius: 30px;
+    transition: 0.4s;
+    margin-top: 10px;
+    margin-bottom: 7px;
+}
+.portfolio button:hover{
+    background: transparent;
+    color:#b5c4c9;
+}
+.portfolio button:focus{
+    outline: 0;
+    box-shadow: none;
+}
+.btn-more{
+    text-align: center;
+    margin: 35px 0 60px;
+}
+
+
+@media (max-width:992px){
+    .portfolio .container{
+        padding: 0 15px;
+    }
+   
+}
+@media (max-width:768px){
+    .portfolio h1{
+    font-size: 35px;
+    }
+    .portfolio span{
+        font-size: 12px;
+    }
+}
+@media (max-width:576px){
+    .portfolio ul li{
+        font-size: 13px;
+    }
+}

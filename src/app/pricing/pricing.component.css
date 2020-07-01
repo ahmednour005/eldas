@@ -1,0 +1,149 @@
+.pricing{
+    padding: 85px 0 70px;
+    background: #f3fbfd;
+    margin-top: 50px;
+    overflow: hidden;
+}
+.pricing .container{
+    padding: 0 95px;
+}
+.pricing span{
+    display: block;
+    color: #a2adb4;
+    font-size: 14px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    text-align: center;
+}
+.pricing h1{
+    text-align: center;
+    font-size: 48px;
+    font-weight: 800;
+    margin-bottom: 45px;
+}
+.pricing .item{
+    background: #FFF;
+    padding: 35px;
+    text-align: center;
+    box-shadow: 0 0 7px rgba(0,0,0,0.2);
+    border-radius: 5px;
+    margin-top: 15px;
+}
+.pricing .number{
+    width: 90px;
+    height: 90px;
+    margin: auto;
+    line-height: 90px;
+    background: #f3fbfd;
+    border-radius: 50%;
+    font-size: 42px;
+    font-weight: 900;
+}
+.pricing .item span{
+    margin-bottom: 10px;
+    font-size: 13px;
+}
+.pricing .item p{
+    color:#646464;
+    font-size: 14px;
+    margin-top: 10px;
+}
+.pricing ul{
+    list-style: none;
+    padding: 0;
+}
+.pricing ul li{
+    color:#646464;
+    font-size: 14px;
+    margin-top: 10px;
+}
+.pricing ul li::before{
+    font-family: FontAwesome;
+    content: "\f00c";
+    background: #fe531d;
+    color: #FFF;
+    padding: 2px;
+    border-radius: 50%;
+    margin-right: 7px;
+    font-size: 10px;
+}
+.pricing button{
+    background: #1f7ee8;
+    border: 1px solid #1f7ee8;
+    padding: 10px 20px 12px;
+    color: #FFF;
+    font-weight: 600;
+    font-size: 13px;
+    border-radius: 30px;
+    transition: 0.4s;
+    margin-top: 10px;
+    margin-bottom: 7px;
+}
+.pricing button:focus{
+    outline: 0;
+    box-shadow: none;
+}
+.pricing .item1 button{
+    background: #1f7ee8;
+    border: 1px solid #1f7ee8;
+}
+.pricing .item1 button:hover{
+    background-color: transparent;
+    color:#1f7ee8;
+
+}
+.pricing .item2 button{
+    background: #8e34ee;
+    border: 1px solid #8e34ee;
+}
+.pricing .item2 button:hover{
+    background-color: transparent;
+    color:#8e34ee;
+}
+.pricing .item3 button{
+    background: #fe531d;
+    border: 1px solid #fe531d;
+}
+.pricing .item3 button:hover{
+    background-color: transparent;
+    color:#fe531d;
+}
+.pricing .item1{
+
+  border: 5px solid;
+  border-image-source: linear-gradient(100deg, rgba(64,148,231,1) 0%, rgba(45,219,224,1) 100%);
+  border-image-slice: 1;
+  border-bottom: 0;
+  border-right: 0; 
+  border-left: 0;
+}
+.pricing .item2{
+    border: 5px solid;
+    border-image-source: linear-gradient(100deg, rgba(105,23,215,1) 0%, rgba(223,39,124,1) 100%);
+    border-image-slice: 1;
+    border-bottom: 0;
+    border-right: 0; 
+    border-left: 0;
+}
+.pricing .item3{
+    border: 5px solid;
+    border-image-source: linear-gradient(100deg, rgba(251,34,57,1) 0%, rgba(248,106,49,1) 100%);
+    border-image-slice: 1;
+    border-bottom: 0;
+    border-right: 0; 
+    border-left: 0;
+}
+@media (max-width:992px){
+   .pricing .container{
+       padding: 0 15px;
+   }
+}
+
+@media (max-width:768px){
+    .pricing h1{
+    font-size: 35px;
+    }
+    .pricing span{
+        font-size: 12px;
+    }
+}

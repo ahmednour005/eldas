@@ -1,0 +1,108 @@
+
+.container{
+    padding: 0 95px;
+}
+
+.header{
+    font-family: "Segoe UI";
+    height: 750px;
+    margin-top: -80px;
+    position: relative;
+    overflow: hidden;
+    padding-top: 140px;
+}
+.header .bg-img{
+    position: absolute;
+    top: -176px;
+    right: -300px;
+    z-index: -3;
+    height: 900px;
+}
+
+.header .right-side img{
+    width: 109%;
+    position: absolute;
+    top: 14px;
+    right: -17px;
+}
+.header .left-side h1{
+    font-size: 60px;
+    font-weight: 800;
+    margin-top: 25px;
+}
+.header .left-side p{
+    font-size: 23px;
+    color:#4d5473
+}
+.header .left-side button{
+    background: #fe531d;
+    border: 1px solid #fe531d;
+    padding: 10px 29px;
+    color: #FFF;
+    font-weight: 600;
+    font-size: 13px;
+    border-radius: 30px;
+    transition: 0.4s;
+    margin-bottom: 7px;
+}
+.header .left-side button:hover{
+    background:transparent;
+    color:#fe531d
+}
+.header .left-side button:focus{
+    outline: 0;
+    box-shadow: none;
+}
+
+.header .left-side button i{
+transform: rotate(90deg);
+margin-left: 5px;
+}
+
+
+@media (min-width:1400px){
+    .header .bg-img{
+        position: absolute;
+        top: -270px;
+        right: -300px;
+        z-index: -3;
+        height: 1020px;
+    }
+ 
+}
+@media (max-width:992px){
+    .header .container{
+        padding: 0;
+    }
+ 
+}
+@media (max-width:768px){
+    .header .left-side h1{
+        margin-top: 0;
+        font-size: 50px;
+    }
+    .header .left-side p{
+        font-size: 20px;
+    }
+    .header{
+        height: 860px;
+    }
+    .header .right-side img{
+        width: 85%;
+        right: auto;
+    }
+}
+@media (max-width:576px){
+.header .container{
+    padding:0 15px;
+}
+.header .left-side h1{
+    font-size: 35px;
+}
+.header .left-side p{
+    font-size: 17px;
+}
+.header .left-side button{
+    padding: 8px 15px;
+}
+}

@@ -1,0 +1,109 @@
+.bg-light .links-items{
+    margin: auto;
+}
+.bg-light{
+    background: transparent !important;
+    position: relative;
+    z-index: 99999;
+    height: 70px;
+    line-height: 70px;
+}
+.bg-light .nav-item{
+    position: relative;
+    transition: 0.5s;
+}
+
+.bg-light .nav-item .nav-link{
+    color: #FFF;
+    font-size: 15px;
+    margin-left: 25px;
+    font-weight: 600;
+    transition: 0.5s;
+    position: relative;
+}
+
+.bg-light .nav-item .nav-link::before{
+    content: '';
+    position: absolute;
+    height: 2px;
+    width: 0;
+    background-color: #FFF;
+    bottom: 27px;
+    transition: 0.3s;
+}
+.bg-light .nav-item.active > .nav-link::before ,.bg-light .nav-item .nav-link:hover::before{
+    width: 75%;
+}
+.bg-light .navbar-brand img{
+    width: 105px;
+}
+
+
+.bg-light .icon-nav{
+margin-left: 15px;
+}
+.bg-light .icon-nav .cart img{
+    margin-top: -5px ;
+}
+.bg-light .icon-nav .lang img{
+    margin-right: 5px;
+    margin-top: -3px;
+}
+
+.bg-light .icon-nav img{
+    width: 17px ;
+}
+.bg-light .icon-nav a{
+    color:#FFF;
+    text-decoration: none;
+}
+.bg-light .icon-nav a:hover{
+    color:#FFF;
+}
+.bg-light .display-menu{
+    display: none;
+}
+.fa-close{
+    display: none;
+}
+@media (max-width:992px){
+    .bg-light .display-menu{
+        display: block;
+    } 
+    .nav-menu-icon .nav-item{
+        display: inline-block;
+    }
+    .nav-menu-icon{  
+          display: block;
+        }
+    .bg-light .navbar-collapse{
+        height: 100vh;
+        width: 200px;
+        background-color: #1a1b29;
+        top:0;
+        right:-200px;
+        position: fixed;
+        text-align: left;
+        z-index: 2;
+        transition: 0.5s;
+        display: block;
+      }
+      .bg-light .fa{
+        display: block;
+        color:#FFF;
+        margin: 12px 25px;
+        font-size: 25px;
+        cursor: pointer;
+      }
+      .bg-light .nav-item.active > .nav-link::before ,.bg-light .nav-item .nav-link:hover::before{
+        width: 20%;
+    }
+    .bg-light .nav-item .nav-link{
+        text-align: center;
+        margin-top: 0;
+        margin-bottom: 0;
+        padding-top: 0;
+        margin-left: 0;
+    }
+     
+}
